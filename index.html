@@ -13,16 +13,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Header -->
   <header class="site-header" id="site-header">
     <nav class="nav-inner">
       <a href="#top" class="nav-logo">
-        <span class="logo-jp">侍友</span>
-        <span class="logo-en">ZIU Co., Ltd.</span>
+        <img src="logo.png" alt="侍友ロゴ" class="logo-emblem">
+        <div class="logo-text">
+          <span class="logo-jp">侍友</span>
+          <span class="logo-en">ZIU Co., Ltd.</span>
+        </div>
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く">
         <span></span><span></span><span></span>
@@ -38,24 +41,21 @@
 
   <!-- Hero -->
   <section class="hero" id="top">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-label">群馬県みどり市 — 農業のプロフェッショナル集団</p>
+    <div class="hero-inner">
+      <img src="logo.png" alt="株式会社 侍友" class="hero-logo">
+      <p class="hero-label">— 群馬県みどり市 農業のプロフェッショナル集団 —</p>
       <h1 class="hero-catch">
-        大地の恵みを、<br>まっすぐ食卓へ。<br>
-        <span>持続可能な未来を<br class="sp-only">つむぐ農業。</span>
+        大地の恵みを、<br>まっすぐ食卓へ。
       </h1>
       <p class="hero-sub">
-        株式会社 侍友は、群馬県みどり市を拠点に、<br>
-        安心・安全な有機農産物・特別栽培農産物の<br>
-        生産と流通を担う農業のプロフェッショナル集団です。
+        持続可能な未来をつむぐ農業。
       </p>
       <div class="hero-actions">
-        <a href="#concept" class="btn btn-primary">私たちのこだわり</a>
+        <a href="#concept" class="btn btn-white">私たちのこだわり</a>
         <a href="#contact" class="btn btn-outline">お問い合わせ</a>
       </div>
     </div>
+    <div class="checker-strip"></div>
     <a href="#concept" class="hero-scroll" aria-label="下へスクロール">
       <span></span>
     </a>
@@ -64,12 +64,12 @@
   <!-- Concept -->
   <section class="concept section" id="concept">
     <div class="container">
-      <div class="section-label">Our Philosophy</div>
+      <div class="section-eyebrow">Our Philosophy</div>
       <h2 class="section-title">私たちのこだわり</h2>
       <div class="concept-body">
         <div class="concept-text">
           <p class="concept-lead">
-            私たちは、単に作物を育てるだけでなく、<br>
+            単に作物を育てるだけでなく、<br>
             地域の農地を守り、環境に配慮した<br>
             「資源循環型」の次世代農業を目指しています。
           </p>
@@ -81,18 +81,18 @@
           </p>
         </div>
         <div class="concept-cards">
-          <div class="concept-card">
-            <div class="concept-icon">🌱</div>
+          <div class="concept-card fade-in">
+            <div class="concept-card-num">I</div>
             <h3>土づくりから</h3>
             <p>農薬・化学肥料を抑え、土壌の健康を守る有機農業</p>
           </div>
-          <div class="concept-card">
-            <div class="concept-icon">♻️</div>
+          <div class="concept-card fade-in">
+            <div class="concept-card-num">II</div>
             <h3>資源の循環</h3>
             <p>家畜ふん尿・農業残渣を有効活用し、廃棄物ゼロを目指す</p>
           </div>
-          <div class="concept-card">
-            <div class="concept-icon">🏡</div>
+          <div class="concept-card fade-in">
+            <div class="concept-card-num">III</div>
             <h3>地域とともに</h3>
             <p>みどり市の農地と自然を守り、地域コミュニティを支える</p>
           </div>
@@ -104,17 +104,15 @@
   <!-- Services -->
   <section class="services section" id="services">
     <div class="container">
-      <div class="section-label">Our Services</div>
+      <div class="section-eyebrow">Our Services</div>
       <h2 class="section-title">事業内容</h2>
       <p class="section-desc">農業生産・流通を中心に、環境保全から地域づくりまで幅広く取り組んでいます。</p>
-
       <div class="service-grid">
 
-        <div class="service-card">
+        <div class="service-card fade-in">
           <div class="service-num">01</div>
-          <div class="service-icon">🌾</div>
           <h3>農業生産・流通事業</h3>
-          <p class="service-tag">メイン事業</p>
+          <div class="service-tag">メイン事業</div>
           <p>安全で美味しい、こだわりの作物を全国へお届けします。</p>
           <ul>
             <li>有機農産物・特別栽培農産物の生産および販売<br><small>農薬や化学肥料を抑え、環境と身体に優しい野菜・果物</small></li>
@@ -123,9 +121,8 @@
           </ul>
         </div>
 
-        <div class="service-card">
+        <div class="service-card fade-in">
           <div class="service-num">02</div>
-          <div class="service-icon">🌍</div>
           <h3>環境保全・資源循環事業</h3>
           <p>持続可能な農業のため、地球に優しい仕組みづくりに取り組んでいます。</p>
           <ul>
@@ -135,9 +132,8 @@
           </ul>
         </div>
 
-        <div class="service-card">
+        <div class="service-card fade-in">
           <div class="service-num">03</div>
-          <div class="service-icon">🏔️</div>
           <h3>農地保全・地域整備事業</h3>
           <p>地域の豊かな自然と農地を守り、未来へつなぐ活動です。</p>
           <ul>
@@ -147,9 +143,8 @@
           </ul>
         </div>
 
-        <div class="service-card">
+        <div class="service-card fade-in">
           <div class="service-num">04</div>
-          <div class="service-icon">👨‍🌾</div>
           <h3>農業体験・コミュニティ事業</h3>
           <p>農業の魅力を伝え、人と地域をつなぎます。</p>
           <ul>
@@ -164,9 +159,9 @@
   <!-- Company -->
   <section class="company section" id="company">
     <div class="container">
-      <div class="section-label">Company Profile</div>
+      <div class="section-eyebrow">Company Profile</div>
       <h2 class="section-title">会社概要</h2>
-      <div class="company-inner">
+      <div class="company-inner fade-in">
         <table class="company-table">
           <tbody>
             <tr>
@@ -179,11 +174,7 @@
             </tr>
             <tr>
               <th>所在地</th>
-              <td>
-                〒376-0101<br>
-                群馬県みどり市大間々町大間々2057-1<br>
-                フィオーレB102
-              </td>
+              <td>〒376-0101 群馬県みどり市大間々町大間々2057-1 フィオーレB102</td>
             </tr>
             <tr>
               <th>事業内容</th>
@@ -202,7 +193,7 @@
         <div class="company-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.0!2d139.2735!3d36.4789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5aSn6aas55yM44G_44Gp44KK5biC5aSn6ZaL55S677yR!5e0!3m2!1sja!2sjp!4v1700000000000"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="株式会社 侍友 所在地">
           </iframe>
@@ -213,23 +204,22 @@
 
   <!-- Contact -->
   <section class="contact section" id="contact">
+    <div class="checker-strip-top"></div>
     <div class="container">
-      <div class="section-label">Contact</div>
+      <div class="section-eyebrow">Contact</div>
       <h2 class="section-title">お問い合わせ</h2>
       <p class="contact-desc">
         農産物のお取り引き、農業体験へのご参加、農地管理のご相談など、<br>
         お気軽にお問い合わせください。
       </p>
       <div class="contact-cards">
-        <a href="tel:09057921069" class="contact-card">
-          <div class="contact-card-icon">📞</div>
-          <div class="contact-card-label">お電話でのお問い合わせ</div>
+        <a href="tel:09057921069" class="contact-card fade-in">
+          <div class="contact-card-label">TEL</div>
           <div class="contact-card-value">090-5792-1069</div>
           <div class="contact-card-note">受付時間：平日 9:00〜18:00</div>
         </a>
-        <a href="mailto:kanno.ziu.1996@gmail.com" class="contact-card">
-          <div class="contact-card-icon">✉️</div>
-          <div class="contact-card-label">メールでのお問い合わせ</div>
+        <a href="mailto:kanno.ziu.1996@gmail.com" class="contact-card fade-in">
+          <div class="contact-card-label">MAIL</div>
           <div class="contact-card-value">kanno.ziu.1996@gmail.com</div>
           <div class="contact-card-note">24時間受付 / 2営業日以内に返信</div>
         </a>
@@ -242,9 +232,14 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <span class="logo-jp">侍友</span>
-          <span class="logo-en">ZIU Co., Ltd.</span>
-          <p>大地の恵みを、まっすぐ食卓へ。</p>
+          <img src="logo.png" alt="侍友ロゴ" class="footer-logo">
+          <div>
+            <div class="footer-name">
+              <span class="logo-jp">侍友</span>
+              <span class="logo-en">ZIU Co., Ltd.</span>
+            </div>
+            <p>大地の恵みを、まっすぐ食卓へ。</p>
+          </div>
         </div>
         <nav class="footer-nav">
           <a href="#concept">こだわり</a>
@@ -253,6 +248,7 @@
           <a href="#contact">お問い合わせ</a>
         </nav>
       </div>
+      <div class="checker-footer"></div>
       <div class="footer-bottom">
         <p>&copy; 2025 株式会社 侍友 All Rights Reserved.</p>
       </div>
@@ -260,13 +256,11 @@
   </footer>
 
   <script>
-    // Header scroll effect
     const header = document.getElementById('site-header');
     window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 60);
     });
 
-    // Hamburger menu
     const toggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
     toggle.addEventListener('click', () => {
@@ -281,19 +275,12 @@
       });
     });
 
-    // Intersection Observer for fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
       });
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.concept-card, .service-card, .company-inner, .contact-card').forEach(el => {
-      el.classList.add('fade-in');
-      observer.observe(el);
-    });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
